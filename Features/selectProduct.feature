@@ -1,13 +1,13 @@
-Feature:
-functionality: Selecionar Produto na Loja 
+#language: pt
+Funcionalidade: Selecionar Produto na Loja
     @Loja
-    Scenario: Selecao de Produto com Sucesso
-    Given que acesso a página inicial do site
-    When preencho o usuário como "secret_sauce"
-    And a senha "sauce_secret" e clico no botao Login
-    Then exibe "Products" no titulo da Selecao
-    Given adiciono o produto "Sauce Labs Backpack" ao carrinho
-    And clico no icone do carrinho de compras
-    Then exibe a pagina do carrinho com a quantidade "1"
-    And o nome do produto "Sauce Labs Backpack"
-    And o preco como "$29.99"    
+    Cenario: Selecao de Produto com Sucesso
+        Dado que acesso a página inicial do site 
+        Quando preencho o usuário como "standard_user"
+        E a senha "secret_sauce" e clico no botao Login
+        Entao exibe "Products" no titulo da secao
+        Quando adiciono o produto "Sauce Labs Backpack" ao carrinho
+        E clico no icone do carrinho de compras
+        Entao exibe a pagina do carrinho com a quantidade "1"
+        E nome do produto "Sauce Labs Backpack"  
+        E o preco como "$29.99"
