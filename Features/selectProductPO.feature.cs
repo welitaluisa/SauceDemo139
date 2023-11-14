@@ -74,11 +74,11 @@ namespace SauceDemo139.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Selecao de Produto com Sucesso DDT PO")]
+        [NUnit.Framework.DescriptionAttribute("Selecao de Produto com Sucesso PO")]
         [NUnit.Framework.CategoryAttribute("PO")]
         [NUnit.Framework.TestCaseAttribute("\"standard_user\"", "\"secret_sauce\"", "\"Products\"", "\"Sauce Labs Backpack\"", "\"1\"", "\"$29.99\"", null)]
         [NUnit.Framework.TestCaseAttribute("\"visual_user\"", "\"secret_sauce\"", "\"Products\"", "\"Sauce Labs Bike Light\"", "\"1\"", "\"$9.99\"", null)]
-        public void SelecaoDeProdutoComSucessoDDTPO(string usuario, string senha, string tituloSecao, string produto, string quantidade, string preco, string[] exampleTags)
+        public void SelecaoDeProdutoComSucessoPO(string usuario, string senha, string tituloSecao, string produto, string quantidade, string preco, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "PO"};
@@ -94,7 +94,7 @@ namespace SauceDemo139.Features
             argumentsOfScenario.Add("produto", produto);
             argumentsOfScenario.Add("quantidade", quantidade);
             argumentsOfScenario.Add("preco", preco);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Selecao de Produto com Sucesso DDT PO", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Selecao de Produto com Sucesso PO", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 4
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -109,7 +109,7 @@ this.ScenarioInitialize(scenarioInfo);
         testRunner.Given("que acesso a página inicial do site PO", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 6
-        testRunner.When(string.Format("preencho o usuário como {0} PO", usuario), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+        testRunner.When(string.Format("preencho o {0} PO", usuario), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 7
         testRunner.And(string.Format("a senha {0} e clico no botao Login PO", senha), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");

@@ -18,7 +18,7 @@ namespace MyNamespace
         {
             _scenarioContext = scenarioContext;
         }
-
+        
         [BeforeScenario]
         public void SetUp()
         {
@@ -29,6 +29,7 @@ namespace MyNamespace
             driver.Manage().Window.Maximize();
         }
 
+        
         [AfterScenario]
         public void TearDown()
         {

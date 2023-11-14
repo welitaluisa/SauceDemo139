@@ -1,7 +1,7 @@
 #language: pt
 Funcionalidade: Selecionar Produto na Loja
-    @Loja
-    Cenario: Selecao de Produto com Sucesso
+@Loja
+Cenario: Selecao de Produto com Sucesso
         Dado que acesso a página inicial do site 
         Quando preencho o usuário como "standard_user"
         E a senha "secret_sauce" e clico no botao Login
